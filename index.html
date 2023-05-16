@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disease Prediction App</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<img class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="login-content">
+			<form name="getsym">
+				<h2 class="title">Enter Your Symptoms</h2>
+           		<div class="one">
+           		   <div class="i">
+           		   </div>
+           		   <div class="divs">
+						<select name="symptom" id="symptoms" multiple>
+						</select>
+           		   </div>
+           		</div>
+            	<input type="submit" class="btn" value="Predict">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/js/multi-select-tag.js"></script>
+	<script>
+		new MultiSelectTag('symptoms', {
+			rounded: true,    // default true
+			shadow: true     // default false
+		})  // id
+	</script>
+</body>
+</html>
